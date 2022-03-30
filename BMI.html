@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI</title>
+    <link rel="stylesheet" type="text/css" href="BMI.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script type="text/javascript">
+         function computeBMI() {
+                // user inputs
+                var height = Number(document.getElementById("height").value);
+              
+                var weight = Number(document.getElementById("weight").value);
+   
+                var BMI = (weight / Math.pow(height, 2));
+        
+                document.getElementById("output").innerText = BMI ;
+        
+                var output = BMI 
+                if (output < 18.5)
+                    document.getElementById("comment").innerText = "Underweight";
+                else if (output >= 18.5 && output <= 25)
+                    document.getElementById("comment").innerText = "Normal";
+                else if (output >= 25 && output <= 30)
+                    document.getElementById("comment").innerText = "Obese";
+                else if (output > 30)
+                    document.getElementById("comment").innerText = "Overweight";
+            }
+     </script>
+</head>
+<body>
+    <div>
+    <div class="menu">
+        <ul>
+            <li title="Home Page" class="Home-active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li title="About this work"><a href="About.html"><i class="fa fa-eye" ></i> About</a></li>
+
+            <li title="Curriculum Vitae" class="MyCv-active"><a href="#"><i class="fa fa-user-o"></i>My CV</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li title="My BioData"><a href="BioData.html">Bio Data</a></li>
+                        <li title="My interests"><a href="Interest.html">Interest</a></li>
+                        <li title="My Achievements"><a href="Achievements.html">Achievements</a></li>
+                        <li title="My Compitencies"><a href="Compitencies.html">Compitencies</a></li>
+                        <li title="My Experiences"><a href="Experience.html">Experience</a></li>
+                    </ul>
+                </div> 
+            </li>
+
+            <li title="Places I have been"><a href="MyFootprint.html"><i class="fa fa-male"></i>My Footprint</a></li>
+            <li title="Clubs in College" class="clubs-active"><i class="fa fa-cc-diners-club"></i>Clubs
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Taraya.html">Taraya</a></li>
+                        <li><a href="Literary.html">Literary</a></li>
+                        <li><a href="Rovers.html">Media</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li title="Event happened in College" class="events-active"><i class="fa fa-calendar"></i>Event</a>
+                <div class="sub-menu-3">
+                    <ul>
+                        <li><a href="Foundation.html">Foundation Day</a></li>
+                        <li><a href="TsomenChoedpa.html">Tsomen Choedpa</a></li>
+                        <li><a href="Football.html">F/ball Contest</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li title="Press to calculate BMI" class="bmi-active"><a href="BMI.html"><i class="fa fa-calculator"></i>BMI</a></li>
+        </ul>
+    </div>
+    </div>
+    <br>
+<div class="BMI">
+    <div class="t1"><br>
+        <h1 style="text-align: center; color: white;">Body Mass Index Calculator</h1><br>
+        <p style="color: white; font-size: 18px;">Enter your height<br> <br><input style="padding: 10px;" type="text" id="height" placeholder="in metre" />
+           
+             </p><br><br>
+        <p style="color: white;  font-size: 18px;">Enter your weight<br><br> <input style="padding: 10px;" type="text" id="weight" placeholder="in kg" />
+            
+        </p>
+        <br><br>
+        <input class="btn" type="button" value="COMPUTE-BMI" onclick="computeBMI();"><br><br>
+        <h1 style="text-align: center; color: white;">Your BMI is: <span id="output">?</span></h1>
+        <br><br>
+        <h2 style="text-align: center; color: white;">Category: <span id="comment"> ?</span> </h2> 
+         </body>
+        
+
+</div>
+</div>
+
+<div class="fixed"> 
+    <ul>
+        <li class="footer"><a href="ContactMe.html">Contact me</a></li>
+        <li title="TimeTable for this Sem" class="footer1"><a href="TimeTable.html">Time Table</a></li>
+        <li class="footer2"><a href="SisterColleges.html">Sister Colleges</a></li>
+        <li><a href="https://www.gcit.edu.bt/">gcit.edu.bt</a></li>
+        <li class="foot"><i>@ Tandin's Web</li>
+        <ul class="ex">
+        <a title="Facebook" href="https://www.facebook.com/?stype=lo&jlou=AfdSnq-pukYVA0S4fMMoAru7VVb10GhlXN7Aqfdgwc3_y6y9T1BAwPv7Zb6W-Yn2PIERogVnF3OcKHY9MXIpE7iGbh9rz0g78WvbZMioLJOIDw&smuh=24286&lh=Ac_chYIzmPCx2ciOouc" class="fa fa-facebook"></a>
+        <a title="Google search" href="https://www.google.com/" class="fa fa-google"></a>
+        <a title="Soundcloud" href="https://soundcloud.com/" class="fa fa-soundcloud"></a>
+        <a title="Youtube" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a title="Snapchat" href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+        <a title="G-Mail" href="https://mail.google.com/" class="fa fa-envelope-o"></a>
+        </ul>
+    </ul>
+</div>
+
+</body>
+</html>
+

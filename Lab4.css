@@ -1,0 +1,23 @@
+.whole-grid{
+	display: grid;
+	padding: 100px;
+	grid-template-columns: auto auto auto;
+	width: 50%;
+}
+
+
+.whole-grid .grid{
+	text-align: center;
+	padding: 70px;
+	border-collapse: collapse;
+	border-width:1px;
+	border-style:solid;
+	border-color:black;
+}
+
+input{
+	width: 180px;
+	height: 150px;	
+	font-size: 50px;
+	text-align: center;
+}
